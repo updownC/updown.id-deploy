@@ -29,9 +29,12 @@ export default ({ data, pageContext, location }) => {
   const { title, comment, siteUrl, author, sponsor } = metaData
   const { disqusShortName, utterances } = comment
   const { title: postTitle, date, thumbnail } = post.frontmatter
-  const thumbnailSrc = (thumbnail != null && thumbnail.childImageSharp != null && thumbnail.childImageSharp.fixed != null)
-    ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
-    : undefined
+  const thumbnailSrc =
+    thumbnail != null &&
+    thumbnail.childImageSharp != null &&
+    thumbnail.childImageSharp.fixed != null
+      ? `${siteUrl}${thumbnail.childImageSharp.fixed.src}`
+      : undefined
 
   return (
     <Layout location={location} title={title}>
@@ -43,21 +46,20 @@ export default ({ data, pageContext, location }) => {
       <PostTitle title={postTitle} />
       <PostDate date={date} />
       <PostContainer html={post.html} />
-      <SocialShare title={postTitle} author={author} />
       {!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
       )}
       <Elements.Hr />
       <Bio />
       <PostNavigator pageContext={pageContext} />
-      {!!disqusShortName && (
+      {/* {!!disqusShortName && (
         <Disqus
           post={post}
           shortName={disqusShortName}
           siteUrl={siteUrl}
           slug={pageContext.slug}
         />
-      )}
+      )} */}
       {!!utterances && <Utterances repo={utterances} />}
     </Layout>
   )
