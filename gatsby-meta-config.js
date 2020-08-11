@@ -1,5 +1,5 @@
 module.exports = {
-  title: `Updown log`,
+  title: `UPDOWN.id`,
   description: `개발자는 어떻게 하는 건가요. updownC의 와장창 개발일기`,
   author: `updownC`,
   introduction: `\n 少年よ大志を抱け`,
