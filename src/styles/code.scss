@@ -9,13 +9,13 @@
 @import './variables.scss';
 
 .gatsby-highlight-code-line {
-  background-color: hsla(207, 95%, 15%, 1);
+  background-color: #202331;
   display: block;
   margin-right: -1.2em;
   margin-left: -1.2em;
   padding-right: 1em;
   padding-left: 0.75em;
-  border-left: 0.35em solid #0687f0;
+  border-left: 0.30em solid #676E95;
 }
 
 blockquote {
@@ -26,15 +26,15 @@ code[class*='language-'],
 pre[class*='language-'] {
   color: #e0e0e0;
   background: none;
-  font-family: 'Fira Code', 'Consolas', 'Monaco', 'Andale Mono', 'Ubuntu Mono',
+  font-family: 'Consolas', 'Menulo', 'Andale Mono', 'Ubuntu Mono',
     monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
-  line-height: 1.6;
-  font-size: 13px;
+  line-height: 1.5;
+  font-size: 14px;
 
   -moz-tab-size: 2;
   -o-tab-size: 2;
@@ -61,13 +61,13 @@ pre[class*='language-'] {
   border-radius: 0.6em;
 }
 
-:not(pre) > code[class*='language-'],
+:not(pre)>code[class*='language-'],
 pre[class*='language-'] {
-  background: #212121;
+  background: #292D3E;
 }
 
 /* Inline code */
-:not(pre) > code[class*='language-'] {
+:not(pre)>code[class*='language-'] {
   padding: 0.1em 0.6em;
   border-radius: 0.2em;
   white-space: normal;
@@ -91,24 +91,24 @@ pre[class*='language-'] {
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-  color: #e2777a;
+  color: #f07178;
 }
 
 .token.function-name {
-  color: #6196cc;
+  color: #82aaff;
 }
 
 .token.boolean,
 .token.number,
 .token.function {
-  color: #ff9100;
+  color: #82aaff;
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: #ffff00;
+  color: #fcc45c;
 }
 
 .token.selector,
@@ -116,7 +116,7 @@ pre[class*='language-'] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: #b388ff;
+  color: #c792ea;
 }
 
 .token.string,
@@ -124,19 +124,20 @@ pre[class*='language-'] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: #00e676;
+  color: #c3e88d;
 }
 
 .token.operator,
 .token.entity,
 .token.url {
-  color: #67cdcc;
+  color: #80cbc4;
 }
 
 .token.important,
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
