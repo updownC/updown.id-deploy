@@ -3,7 +3,7 @@ module.exports = {
   description: `개발자는 어떻게 하는 건가요. updownC의 와장창 개발일기`,
   author: `updownC`,
   introduction: `\n 少年よ大志を抱け`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://updown.id`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `updownC`, // Your GitHub account
