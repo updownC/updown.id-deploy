@@ -1,6 +1,6 @@
 body.light {
   background-color: $light-background-color;
-  // text-shadow: $light-text-shadow;
+  color: $dark-gray;
 
   // home
   .home-header {
@@ -50,10 +50,11 @@ body.light {
   }
 
   .thumbnail {
+    transition: opacity .2s linear;
+
     h3 {
       font-size: 24px;
       color: $dark-gray;
-      transition: opacity .2s linear;
     }
 
     p {
@@ -70,9 +71,7 @@ body.light {
     }
 
     &:hover {
-      h3 {
-        opacity: .6;
-      }
+      opacity: .5;
     }
 
   }

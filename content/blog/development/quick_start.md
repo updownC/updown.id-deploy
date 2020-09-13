@@ -5,8 +5,6 @@ category: 'development'
 draft: false
 ---
 
-# Getting Started 😎
-
 ## 1. Create a Gatsby site.
 
 ```sh
