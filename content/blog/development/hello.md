@@ -32,7 +32,7 @@ draft: false
 2. Support highlighting with [prism](https://github.com/PrismJS/prism)
    2-1. Use inline highlighting
 
-```js{3}
+```js
 import React from 'react'
 
 const TEMPLATE = 'gatsby-starter-bee'

@@ -11,6 +11,7 @@
 .gatsby-highlight-code-line {
   background-color: #202331;
   display: block;
+  word-break: break-all;
   margin-right: -1.2em;
   margin-left: -1.2em;
   padding-right: 1em;
@@ -29,9 +30,9 @@ pre[class*='language-'] {
   font-family: 'Consolas', 'Menulo', 'Andale Mono', 'Ubuntu Mono',
     monospace;
   text-align: left;
-  white-space: pre;
+  // white-space: pre;
   word-spacing: normal;
-  word-break: normal;
+  word-break: break-all;
   word-wrap: normal;
   line-height: 1.5;
   font-size: 14px;
@@ -59,6 +60,7 @@ pre[class*='language-'] {
   margin: 1.5em 0;
   overflow: auto;
   border-radius: 0.6em;
+
 }
 
 :not(pre)>code[class*='language-'],
